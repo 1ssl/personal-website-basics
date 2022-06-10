@@ -1,0 +1,815 @@
+#container {
+	margin: 0 auto;
+	/*居中对齐*/
+	width: 1200px;
+	font-family: "微软雅黑";
+}
+
+
+/*菜单区域*/
+
+#banner li {
+	position: relative;
+	display: inline-block;
+	margin: 0 2px;
+}
+
+#banner {
+	/*这里包括导航栏和banner图片*/
+	width: 1200px;
+	height: 200px;
+}
+
+#banner .home-page {
+	/*home-page为导航栏，内有菜单和logo*/
+	position: relative;
+	/*相对定位，使.menu控制在home-page中*/
+	width: 1200px;
+	/*导航栏宽度为1200px*/
+	height: 100px;
+	/*高度为100px*/
+	background: rgba(148, 112, 220, 0.3)/*背景色为淡紫色*/
+	;
+}
+
+#banner .home-page .menu {
+	/*对菜单设置*/
+	position: absolute;
+	/*绝对定位*/
+	top: 30%;
+	/*距顶边距为父容器的30%*/
+	right: 2%;
+	/*距右边距为父容器的2%*/
+	text-align: center;
+	/*内容居中*/
+}
+
+#banner .home-page .menu a {
+	/*对a标记进行设置*/
+	width: 120px;
+	/*a标记宽度为120px*/
+	text-decoration: none;
+	/*去掉a标记下划线*/
+	display: inline-block;
+	/*赋予宽高*/
+	line-height: 45px;
+	/*行高为45px*/
+}
+
+#banner .home-page .hr {
+	max-width: 160px;
+	/*限制子元素最大宽度为160px*/
+	position: relative;
+	border-radius: 0px;
+	/*设置位置为相对位置，否则环绕线没有高*/
+	transition: 0.5s;
+	/*完成改变时间为0.65s*/
+	background: rgba(148, 112, 220, 0);
+	/*背景色为淡紫色*/
+}
+
+#banner .home-page .hr:hover {
+	font-weight: bold;
+	/*字体加粗*/
+	background: rgba(148, 112, 220, 0.8);
+	/*背景色为淡紫色*/
+	border-radius: 25px;
+	/*四周边框设置*/
+}
+
+#banner .dq {
+	/*当前的a标记属性*/
+	font-weight: bold;
+	/*字体加粗*/
+	background: rgba(148, 112, 220, 0.8);
+	/*背景色为淡紫色*/
+	border-radius: 20px;
+	/*四周边框设置*/
+	stroke-width: 5;
+}
+
+#banner .dq {
+	/*当前的a标记属性*/
+	font-weight: bold;
+	/*字体加粗*/
+	background: rgba(148, 112, 220, 0.7);
+	/*背景色为淡紫色*/
+	border-radius: 20px;
+	/*四周边框设置*/
+	stroke-width: 5;
+}
+
+#banner .home-page .dq rect {
+	width: 120px;
+	stroke: #FFFFFF;
+	stroke-width: 5;
+	stroke-dasharray: 25, 235;
+	/*实线宽度为15px，虚线宽度为235px*/
+	stroke-dashoffset: 48;
+	/*实线虚线绘制的起点距路径开始的距离为48px*/
+}
+
+#banner .home-page .dq svg {
+	height: 45px;
+	left: 0;
+	/*距离左边距为0px*/
+	position: absolute;
+	/*绝对定位*/
+	top: 0px;
+	/*距离顶边距为0px*/
+	width: 100%;
+	/*宽度为父容器的内容宽度*/
+}
+
+#banner .home-page .hr svg {
+	height: 45px;
+	left: 0;
+	/*距离左边距为0px*/
+	position: absolute;
+	/*绝对定位*/
+	top: 0px;
+	/*距离顶边距为0px*/
+	width: 100%;
+	/*宽度为父容器的内容宽度*/
+}
+
+#banner .home-page .hr rect {
+	/*环绕线条设置*/
+	stroke: #fff;
+	/*环绕线条颜色*/
+	stroke-width: 3;
+	/*环绕线条宽度*/
+	stroke-dasharray: 422, 0;
+	/*实线宽度为422px，虚线宽度为0px*/
+}
+
+#banner .home-page .hr:hover rect {
+	stroke-width: 5;
+	/*悬停*/
+	stroke-dasharray: 25, 235;
+	/*实线宽度为15px，虚线宽度为235px*/
+	stroke-dashoffset: 48;
+	/*实线虚线绘制的起点距路径开始的距离为48px*/
+	transition: 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	/*改变遵崇贝塞尔曲线，从开始到完成时间为1.35s*/
+}
+
+#banner .home-page .logo {
+	/*导航栏的logo*/
+	margin-left: 100px;
+	width: 200px;
+	height: 120px;
+	text-align: center;
+	/*使logo在其居中*/
+}
+
+#banner .home-page .logo img {
+	/*对logo进行设置*/
+	height: 100px;
+	opacity: 1;
+	/*不透明度为0.65*/
+}
+
+#banner .picture {
+	/*背景图片框设置*/
+	width: 1200px;
+	height: 100px;
+}
+
+#banner .picture img {
+	/*这里是背景图片*/
+	width: 1200px;
+	height: 100px;
+	opacity: 0.65;
+	/*不透明度为0.65*/
+}
+
+
+/*菜单结束*/
+
+
+/*内容开始*/
+
+#content {
+	/*对内容框设置*/
+	width: 1200px;
+}
+
+#content .head {
+	/*内容的标题设置*/
+	margin-top: 20px;
+	/*顶外边距为20px*/
+	width: 1200px;
+	/*宽度为1200px*/
+	height: 150px;
+	/*高度为150px*/
+	text-align: center;
+	/*文字居中对齐*/
+}
+
+#content .value {
+	/*内容的内容设置*/
+	position: relative;
+	/*相对位置，控制子元素*/
+	width: 1200px;
+	/*宽度为1200px*/
+	height: 270px;
+	/*高度为270px*/
+	background: rgba(125, 125, 125, 0.1);
+	/*背景色为浅灰色*/
+	overflow: hidden;
+	/*将超出内容隐藏*/
+}
+
+#content .link1 {
+	/*对单数介绍设置*/
+	position: absolute;
+	/*设置绝对位置*/
+	top: 270px;
+	/*距离父标记顶部270px*/
+	left: 235px;
+	/*距离父标记左边235px*/
+	height: 205px;
+	/*高度设置*/
+	padding: 30px;
+	/*内边距为30px*/
+	transform: translateY(0);
+	/*设置hover之后的属性*/
+	transition: 1.35s;
+	/*完成改变时间是1.35s*/
+}
+
+#content .link2 {
+	/*对双数介绍设置*/
+	position: absolute;
+	/*设置绝对位置*/
+	right: 245px;
+	/*距离右边为245px*/
+	top: -270px;
+	/*距离顶边为-270px*/
+	height: 205px;
+	/*高度设置*/
+	padding: 30px;
+	/*内边距为30px*/
+	transform: translateY(0);
+	/*平移设置hover之后的*/
+	transition: 1.35s;
+	/*完成改变时间为1.35s*/
+}
+
+#content .link1 .value,
+#content .link2 .value {
+	/*二维码框设置*/
+	width: 180px;
+	height: 185px;
+	/*高度设置*/
+	padding: 20px 15px 0;
+	/*内边距设置*/
+	text-align: center;
+	/*文本居中对齐*/
+	display: inline-block;
+	/*去掉换行属性*/
+}
+
+#content .value .zp1 {
+	/*单数照片设置*/
+	position: absolute;
+	/*绝对位置设置*/
+	top: 10px;
+	left: 40px;
+	width: 161px;
+	height: 215px;
+	/*高度设置*/
+}
+
+#content .value .zp1:hover+.jj1 {
+	/*单数照片的hover属性*/
+	transform: translateX(495px);
+	/*x轴平移495px*/
+	transition: 1.35s;
+	/*完成改变时间为1.35s*/
+}
+
+#content .value .zp1:hover~.link1 {
+	/*单数照片的hover属性*/
+	transform: translateY(-270px);
+	/*y轴平移-270px*/
+	transition: 1.35s;
+	/*完成改变时间为1.35s*/
+}
+
+#content .value .zp2:hover~.link2 {
+	/*双数照片hover属性*/
+	transform: translateY(270px);
+	/*y轴平移270px*/
+	transition: 1.35s;
+	/*完成改变时间为1.35s*/
+}
+
+#content .value .jj1 {
+	/*单数介绍的内容框*/
+	position: absolute;
+	/*绝对定位*/
+	top: 25px;
+	left: 235px;
+	width: 860px;
+	height: 170px;
+	/*高度设置*/
+	padding: 25px;
+	/*内边距设置*/
+	font-size: 20px;
+	line-height: 32px;
+	/*行高为32px*/
+	text-align: justify;
+	/*两端问题*/
+	text-indent: 2em;
+	/*首行缩进2字符*/
+	background: rgba(125, 125, 125, 0.1);
+	/*颜色为浅灰色*/
+	transform: translateX(0);
+	/*hover之后的平移属性*/
+	transition: transform 1.35s;
+	/*完成时间为1.35s*/
+}
+
+#content .value .zp2 {
+	/*双数照片设置*/
+	position: absolute;
+	/*绝对位置设置*/
+	top: 10px;
+	left: 955px;
+	width: 161px;
+	height: 215px;
+	/*高度设置*/
+}
+
+#content .value .jj2 {
+	/*双数介绍内容设置*/
+	position: absolute;
+	/*绝对定位*/
+	top: 25px;
+	left: 40px;
+	width: 860px;
+	height: 170px;
+	/*高度设置*/
+	padding: 25px;
+	/*内边距设置*/
+	font-size: 20px;
+	line-height: 32px;
+	/*行高为32px*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首行缩进2字符*/
+	background: rgba(125, 125, 125, 0.1);
+	/*背景为浅灰色*/
+	transform: translateX(0);
+	/*hover之后属性设置*/
+	transition: transform 1.35s;
+	/*完成改变时间为1.35s*/
+}
+
+#content .value .zp2:hover+.jj2 {
+	/*双数照片的hover属性设置*/
+	transform: translateX(-490px);
+	transition: 1s;
+}
+
+#content .big {
+	/*页面字体属性-大*/
+	font-size: 35px;
+	line-height: 45px;
+}
+
+#content .middle {
+	/*页面字体大小-中*/
+	font-size: 26px;
+	line-height: 55px;
+}
+
+#content span {
+	/*界面默认字体设置*/
+	font-size: 20px;
+	line-height: 35px;
+}
+
+#content .zp1 img,
+#content .zp2 img {
+	/*照片设置*/
+	width: 161px;
+	height: 215px;
+	/*高度设置*/
+	border: 15px solid red;
+	border-image: url(img/border-1.png) 30 stretch;
+	e
+}
+
+#content .link1 img,
+#content .link2 img {
+	/*二维码图片设置*/
+	width: 150px;
+	height: 150px;
+	/*高度设置*/
+}
+
+
+/*内容结束*/
+
+
+/*链接开始*/
+
+#links {
+	/*我的朋友链接设置*/
+	position: relative;
+	width: 1200px;
+	height: 680px;
+	/*高度设置*/
+	margin: 0 auto;
+	text-align: left;
+	background: rgba(125, 125, 125, 0.1);
+}
+
+#links .head {
+	/*好朋友链接标题*/
+	margin-top: 20px;
+	height: 100px;
+	/*高度设置*/
+	width: 1200px;
+	text-align: center;
+	background: #fff;
+	/*背景颜色为白色*/
+}
+
+#links .content {
+	/*我的好朋友链接图片*/
+	position: absolute;
+	/*绝对定位*/
+	left: 65px;
+	width: 960px;
+	height: 450px;
+	/*高度设置*/
+	margin: 60px auto;
+}
+
+#links .content img {
+	/*对所有照片设置*/
+	position: absolute;
+	/*设置绝对定位*/
+	padding: 10px 10px 15px;
+	/*内边距设置*/
+	background: #fff;
+	/*背景色为白色*/
+	border: 1px solid #ddd;
+	/*照片外边线为1px的灰色单实线*/
+	z-index: 1;
+	/*图层优先级为1*/
+	transition: transform 1s;
+	/*完成改变为1s*/
+}
+
+#links .content img:hover {
+	/*图片的hover属性*/
+	transform: rotate(0deg);
+	transform: scale(1.1);
+	/*放大1.1倍*/
+	/*照片放大1.1倍*/
+	box-shadow: 5px 5px 5px #ddd;
+	/*对img添加阴影属性，xy轴偏移5px，颜色为灰色*/
+	z-index: 2;
+	/*图层优先级为2，即优先hover属性*/
+}
+
+#links .pic1 {
+	/*隆伟照片设置*/
+	/*照片1设置*/
+	top: 200px;
+	left: 0px;
+	transform: rotate(-5deg);
+	/*旋转角度*/
+}
+
+#links .pic2 {
+	/*秦进德照片设置*/
+	/*照片2设置*/
+	top: 0px;
+	left: 425px;
+	transform: rotate(-20deg);
+	/*旋转角度*/
+}
+
+#links .pic3 {
+	/*罗平贵照片设置*/
+	/*照片3设置*/
+	top: 230px;
+	left: 150px;
+	transform: rotate(5deg);
+	/*旋转角度*/
+}
+
+#links .pic4 {
+	/*田桂燃照片设置*/
+	/*照片4设置*/
+	top: 0;
+	left: 200px;
+	transform: rotate(-10deg);
+	/*旋转角度*/
+}
+
+#links .pic5 {
+	/*黄建国照片设置*/
+	/*照片5设置*/
+	bottom: 0;
+	left: 420px;
+	transform: rotate(15deg);
+	/*旋转角度*/
+}
+
+#links .pic6 {
+	/*谭宇航照片照片设置*/
+	/*照片6设置*/
+	top: 0;
+	left: 0;
+	transform: rotate(10deg);
+	/*旋转角度*/
+}
+
+#links .pic7 {
+	/*秦浩东照片设置*/
+	/*照片7设置*/
+	top: 0;
+	left: 850px;
+	transform: rotate(20deg);
+	/*旋转角度*/
+}
+
+#links .pic8 {
+	/*刘青山照片设置*/
+	/*照片8设置*/
+	bottom: -20px;
+	right: -100px;
+	transform: rotate(5deg);
+	/*旋转角度*/
+}
+
+#links .pic9 {
+	/*陈雨照片设置*/
+	/*照片9设置*/
+	top: 0px;
+	right: 100px;
+	transform: rotate(15deg);
+	/*旋转角度*/
+}
+
+#links .pic10 {
+	/*王渝林照片设置*/
+	/*照片10设置*/
+	left: 600px;
+	top: 160px;
+	transform: rotate(-10deg);
+	/*旋转角度*/
+}
+
+#links .big {
+	/*页面字体属性-大*/
+	font-size: 35px;
+	line-height: 45px;
+}
+
+#links .middle {
+	/*页面字体大小-中*/
+	font-size: 26px;
+	line-height: 55px;
+}
+
+#links span {
+	/*界面默认字体设置*/
+	font-size: 20px;
+	line-height: 25px;
+}
+
+#links img.v {
+	/*横屏照片设置*/
+	width: 270px;
+}
+
+#links img.h {
+	/*竖屏照片设置*/
+	height: 255px;
+}
+
+
+/*链接结束*/
+
+
+/*页脚开始*/
+
+#footer {
+	width: 1200px;
+	background: ghostwhite;
+	/*颜色为米白色*/
+}
+
+#footer .contact {
+	width: 1000px;
+	/*因为padding实际宽度为1000+100*2*/
+	height: 200px;
+	/*因为padding实际高度为100+50*2*/
+	padding: 0px 100px;
+	background: rgba(255, 255, 255, 1);
+}
+
+#footer .contact .content {
+	padding: 20px 0;
+	/*控制内边距，间接增加高度*/
+	height: 130px;
+	text-align: left;
+}
+
+#footer .contact .content span {
+	/*对span标记设置*/
+	width: 200px;
+	margin: 0 25px;
+	padding-left: 70px;
+	height: 45px;
+	/*文本的高度*/
+	text-align: left;
+	display: inline-block;
+	/*赋予宽和高*/
+	/*赋予inline-block属性*/
+}
+
+#footer .ico1 {
+	/*小图标1*/
+	background: url(img/电话.JPG);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .ico2 {
+	/*小图标2*/
+	background: url(img/邮箱.JPG);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .ico3 {
+	/*小图标3*/
+	background: url(img/微博.jpg);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .copy {
+	/*版权信息*/
+	position: relative;
+	/*相对位置*/
+	width: 1200px;
+	height: 240px;
+	background: mediumpurple;
+	/*颜色为紫色*/
+	/*颜色为紫色*/
+	color: #fafafa;
+}
+
+#footer .copy .content {
+	/*版权信息内框设置*/
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	width: 1000px;
+	height: 120px;
+}
+
+#footer .copy .links {
+	/*二维码区域*/
+	position: absolute;
+	margin-top: -10px;
+	right: 0;
+	height: 140px;
+}
+
+#footer .copy .links img.zb {
+	/*左边图片的二维码位置设置*/
+	margin-right: 30px;
+	/*右外边距为30*/
+}
+
+#footer .copy .links span {
+	/*二维码图片说明*/
+	width: 100px;
+	/*宽度为100（二维码大小）*/
+	text-align: center;
+	/*内部居中*/
+	display: inline-block;
+	/*赋予宽和高*/
+	/*使同行*/
+}
+
+#footer .copy .links span.zb {
+	/*左边二维码文字位置设置*/
+	margin-right: 30px;
+	/*右外边距为30*/
+}
+
+#footer .copy span {
+	/*版权信息文字设置*/
+	width: 450px;
+	font-size: 18px;
+	line-height: 35px;
+	display: block;
+}
+
+#footer .copy .big {
+	/*版权信息内容大小*/
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#footer .copy .middle {
+	/*版权信息内容大小*/
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#footer .htbtn {
+	line-height: 45px;
+	margin: 0 auto 0em;
+	text-align: center;
+}
+
+#footer .htbtn:hover {
+	text-decoration: none;
+}
+
+#footer .contact .content a {
+	/*了解更多*/
+	display: inline-block;
+	/*赋予宽和高*/
+}
+
+#footer .htbtn {
+	/*显示设置*/
+	border: 0 solid mediumpurple;
+	/*紫色隐藏单实线*/
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid mediumpurple;
+	/*外轮廓宽度为1px 单实线*/
+	outline-color: rgba(144, 120, 220, 0.5);
+	/*外轮廓颜色为白色，半透明*/
+	outline-offset: 0px;
+	/*外轮廓距离边线0px*/
+	transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+	/*完成时间为1.25s，按照贝塞尔曲线*/
+}
+
+#footer .htbtn:hover {
+	/*hover属性设置*/
+	border: 1px solid mediumpurple;
+	/*出现边线1px 单实线 紫色*/
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+	/*设置阴影效果*/
+	outline-color: rgba(255, 215, 0, 0);
+	/*轮廓线颜色为白色，全透明*/
+	outline-offset: 15px;
+	/*轮廓线距离边线15px*/
+	text-shadow: 1px 1px 2px #427388;
+	/*文字效果设置，x，y偏移1px，模糊2px 颜色为深灰色*/
+	transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+	/*完成时间为1.25s，按照贝塞尔曲线*/
+}
+
+
+/*页脚区域结束，css样式结束*/
+
+
+/*公用代码开始*/
+
+li,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.justfy {
+	/*大段文字专用属性*/
+	text-align: justify;
+	/*两端对齐*/
+	font-size: 16px;
+	line-height: 25px;
+	/*行高设置*/
+	text-indent: 2em;
+	/*首行缩进两字符*/
+}
+
+.transparent {
+	color: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*公用代码结束*/

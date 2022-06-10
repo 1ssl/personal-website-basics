@@ -1,0 +1,1129 @@
+li,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#banner li {
+	position: relative;
+	display: inline-block;
+	/*赋予宽和高*/
+	margin: 0 2px;
+}
+
+.justfy {
+	/*大段文字专用属性*/
+	text-align: justify;
+	/*两端对齐*/
+	font-size: 16px;
+	line-height: 25px;
+	/*行高设置*/
+	text-indent: 2em;
+	/*首行缩进两字符*/
+}
+
+.transparent {
+	color: transparent;
+}
+
+#container {/*整个页面设置*/
+	margin: 0 auto;
+	/*居中对齐*/
+	width: 1200px;
+	font-family: "微软雅黑";
+}
+
+
+/*菜单区域*/
+
+#banner {
+	/*这里包括导航栏和banner图片*/
+	width: 1200px;
+	height: 200px;
+}
+
+#banner .home-page {
+	/*home-page为导航栏，内有菜单和logo*/
+	position: relative;
+	/*相对定位，使.menu控制在home-page中*/
+	width: 1200px;
+	/*导航栏宽度为1200px*/
+	height: 100px;
+	/*高度为100px*/
+	background: rgba(148, 112, 220, 0.3)/*背景色为淡紫色*/
+	;
+}
+
+#banner .home-page .menu {
+	/*对菜单设置*/
+	position: absolute;
+	/*绝对定位*/
+	top: 30%;
+	/*距顶边距为父容器的30%*/
+	right: 2%;
+	/*距右边距为父容器的2%*/
+	text-align: center;
+	/*内容居中*/
+}
+
+#banner .home-page .menu a {
+	/*对a标记进行设置*/
+	width: 120px;
+	/*a标记宽度为120px*/
+	text-decoration: none;
+	/*去掉a标记下划线*/
+	display: inline-block;
+	/*赋予宽高*/
+	line-height: 45px;
+	/*行高为45px*/
+}
+
+#banner .home-page .hr {
+	max-width: 160px;
+	/*限制子元素最大宽度为160px*/
+	position: relative;
+	border-radius: 0px;
+	/*设置位置为相对位置，否则环绕线没有高*/
+	transition: 0.5s;
+	/*完成改变时间为0.65s*/
+	background: rgba(148, 112, 220, 0);
+	/*背景色为淡紫色*/
+}
+
+#banner .home-page .hr:hover {
+	font-weight: bold;
+	/*字体加粗*/
+	background: rgba(148, 112, 220, 0.8);
+	/*背景色为淡紫色*/
+	border-radius: 25px;
+	/*四周边框设置*/
+}
+
+#banner .dq {
+	/*当前的a标记属性*/
+	font-weight: bold;
+	/*字体加粗*/
+	background: rgba(148, 112, 220, 0.8);
+	/*背景色为淡紫色*/
+	border-radius: 20px;
+	/*四周边框设置*/
+	stroke-width: 5;
+}
+
+#banner .home-page .dq rect {
+	width: 120px;
+	stroke: #FFFFFF;
+	stroke-width: 5;
+	stroke-dasharray: 25, 235;
+	/*实线宽度为15px，虚线宽度为235px*/
+	stroke-dashoffset: 48;
+	/*实线虚线绘制的起点距路径开始的距离为48px*/
+}
+
+#banner .home-page .dq svg {
+	height: 45px;
+	left: 0;
+	/*距离左边距为0px*/
+	position: absolute;
+	/*绝对定位*/
+	top: 0px;
+	/*距离顶边距为0px*/
+	width: 100%;
+	/*宽度为父容器的内容宽度*/
+}
+
+#banner .home-page .hr svg {
+	height: 45px;
+	left: 0;
+	/*距离左边距为0px*/
+	position: absolute;
+	/*绝对定位*/
+	top: 0px;
+	/*距离顶边距为0px*/
+	width: 100%;
+	/*宽度为父容器的内容宽度*/
+}
+
+#banner .home-page .hr rect {
+	/*环绕线条设置*/
+	stroke: #fff;
+	/*环绕线条颜色*/
+	stroke-width: 3;
+	/*环绕线条宽度*/
+	stroke-dasharray: 422, 0;
+	/*实线宽度为422px，虚线宽度为0px*/
+}
+
+#banner .home-page .hr:hover rect {
+	stroke-width: 5;
+	/*悬停*/
+	stroke-dasharray: 25, 235;
+	/*实线宽度为15px，虚线宽度为235px*/
+	stroke-dashoffset: 48;
+	/*实线虚线绘制的起点距路径开始的距离为48px*/
+	transition: 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	/*改变遵崇贝塞尔曲线，从开始到完成时间为1.35s*/
+}
+
+#banner .home-page .logo {
+	/*导航栏的logo*/
+	margin-left: 100px;
+	width: 200px;
+	height: 120px;
+	text-align: center;
+	/*使logo在其居中*/
+}
+
+#banner .home-page .logo img {
+	/*对logo进行设置*/
+	height: 100px;
+	opacity: 1;
+	/*不透明度为0.65*/
+}
+
+#banner .picture {
+	/*背景图片框设置*/
+	width: 1200px;
+	height: 100px;
+}
+
+#banner .picture img {
+	/*这里是背景图片*/
+	width: 1200px;
+	height: 100px;
+	opacity: 0.65;
+	/*不透明度为0.65*/
+}
+
+
+/*内容区域*/
+
+#content .content1 {
+	/*丰都县职业教育中心框*/
+	width: 1200px;
+	height: 1660px;
+	text-align: center;
+}
+
+#content .content2 {
+	/*重庆师范大学框*/
+	width: 1200px;
+	height: 1740px;
+	overflow: hidden;
+}
+
+#content .content1 .head {
+	/*丰职中标题*/
+	padding-top: 30px;
+	width: 1200px;
+	height: 150px;
+}
+
+#content .content2 .head {
+	/*重庆师范大学标题*/
+	padding-top: 30px;
+	width: 1200px;
+	height: 150px;
+	text-align: center;
+}
+
+#content .content1 .value {
+	/*丰都县职业教育中心内容*/
+	width: 1200px;
+	height: 480px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#content .content2 .value {
+	/*重庆师范大学内容*/
+	width: 1200px;
+	height: 480px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#content .content1 .value div {
+	/*丰都县职业教育中心设置div属性*/
+	width: 240px;
+	height: 240px;
+	background: rgba(125, 125, 125, 0.1);
+}
+
+#content .content1 .value img {
+	/*丰都县职业教育中心对图片进行设置*/
+	width: 240px;
+	height: 240px;
+}
+
+#content .content2 .value div {
+	/*重庆师范大学设置div属性*/
+	width: 240px;
+	height: 240px;
+	background: rgba(125, 125, 125, 0.1);
+}
+
+#content .content2 .value img {
+	/*重庆师范大学对图片进行设置*/
+	width: 240px;
+	height: 240px;
+}
+
+#content .content1 .value .d1 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 0;
+	left: 0;
+}
+
+#content .content1 .value .d2 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 0;
+	left: 240px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content1 .value .d3 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 0;
+	left: 480px;
+}
+
+#content .content1 .value .d4 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 0;
+	left: 720px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content1 .value .d5 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 0;
+	left: 960px;
+}
+
+#content .content1 .value .d6 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 240px;
+	left: 0;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content1 .value .d7 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 240px;
+	left: 240px;
+}
+
+#content .content1 .value .d8 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 240px;
+	left: 480px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content1 .value .d9 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 240px;
+	left: 720px;
+}
+
+#content .content1 .value .d10 {
+	/*丰都县职业教育中心大框位置设置*/
+	top: 240px;
+	left: 960px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d1 {
+	/*重庆师范大学大框位置设置*/
+	top: 0;
+	left: 0;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d2 {
+	/*重庆师范大学大框位置设置*/
+	top: 0;
+	left: 240px;
+}
+
+#content .content2 .value .d3 {
+	/*重庆师范大学大框位置设置*/
+	top: 0;
+	left: 480px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d4 {
+	/*重庆师范大学大框位置设置*/
+	top: 0;
+	left: 720px;
+}
+
+#content .content2 .value .d5 {
+	/*重庆师范大学大框位置设置*/
+	top: 0;
+	left: 960px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d6 {
+	/*重庆师范大学大框位置设置*/
+	top: 240px;
+	left: 0;
+}
+
+#content .content2 .value .d7 {
+	/*重庆师范大学大框位置设置*/
+	top: 240px;
+	left: 240px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d8 {
+	/*重庆师范大学大框位置设置*/
+	top: 240px;
+	left: 480px;
+}
+
+#content .content2 .value .d9 {
+	/*重庆师范大学大框位置设置*/
+	top: 240px;
+	left: 720px;
+	padding: 20px 20px;
+	/*内容内边距*/
+	width: 200px;
+	/*宽度设置*/
+	height: 200px;
+	/*高度设置*/
+	line-height: 30px;
+	/*行高设置*/
+	font-size: 16px;
+	/*字体大小*/
+	text-align: justify;
+	/*两端对齐*/
+	text-indent: 2em;
+	/*首航缩进2字符*/
+}
+
+#content .content2 .value .d10 {
+	/*重庆师范大学大框位置设置*/
+	top: 240px;
+	left: 960px;
+}
+
+#content .content1 .value .d1,
+#content .content1 .value .d2,
+#content .content1 .value .d3,
+#content .content1 .value .d4,
+#content .content1 .value .d5,
+#content .content1 .value .d6,
+#content .content1 .value .d7,
+#content .content1 .value .d8,
+#content .content1 .value .d9,
+#content .content1 .value .d10 {
+	/*丰都县职业教育中心定位设置*/
+	position: absolute;
+	/*绝对定位*/
+}
+
+#content .content2 .value .d1,
+#content .content2 .value .d2,
+#content .content2 .value .d3,
+#content .content2 .value .d4,
+#content .content2 .value .d5,
+#content .content2 .value .d6,
+#content .content2 .value .d7,
+#content .content2 .value .d8,
+#content .content2 .value .d9,
+#content .content2 .value .d10 {
+	/*重庆师范大学定位设置*/
+	position: absolute;
+	/*绝对定位*/
+}
+
+.right {
+	/*右箭头设置*/
+	background-color: #ffff;
+	/*右箭头内框背景色*/
+	position: relative;
+	/*相对定位*/
+	/*相对位置*/
+}
+
+.right:after,
+.right:before {
+	/*右箭头设置*/
+	border: solid transparent;
+	/*隐藏多余部分div*/
+	/*设置为透明色*/
+	content: ' ';
+	height: 0;
+	left: 100%;
+	/*距离左边距100%*/
+	position: absolute;
+	/*绝对定位*/
+	/*绝对定位*/
+	width: 0;
+	z-index: 10;
+}
+
+.right:after {
+	/*右箭头设置*/
+	border-width: 10px;
+	/*设置箭头大小*/
+	/*箭头大小为15px*/
+	border-left-color: #f2f2f2;
+	/*显示出来的边为白色*/
+	top: 45%;
+	/*距离顶部45%*/
+}
+
+.right:before {
+	/*右箭头设置*/
+	border-width: 0px;
+	/*设置隐藏的宽度为0，即隐藏*/
+	/*设置隐藏的宽度为0，即隐藏*/
+	border-left-color: #333;
+	top: 45%;
+}
+
+.left {
+	/*左箭头设置*/
+	background-color: #ffff;
+	position: relative;
+	/*相对定位*/
+}
+
+.left:after,
+.left:before {
+	/*左箭头设置*/
+	border: solid transparent;
+	/*隐藏多余部分div*/
+	content: ' ';
+	height: 0;
+	right: 100%;
+	position: absolute;
+	/*绝对定位*/
+	width: 0;
+	z-index: 10;
+}
+
+.left:after {
+	/*左箭头设置*/
+	border-width: 10px;
+	/*设置箭头大小*/
+	border-right-color: #f2f2f2;
+	top: 45%;
+}
+
+.left:before {
+	/*左箭头设置*/
+	border-width: 0px;
+	/*设置隐藏的宽度为0，即隐藏*/
+	border-right-color: #333;
+	top: 10px;
+}
+
+.top {
+	/*上箭头设置*/
+	background-color: #ffff;
+	position: relative;
+	/*相对定位*/
+}
+
+.top:after,
+.top:before {
+	/*上箭头设置*/
+	border: solid transparent;
+	/*隐藏多余部分div*/
+	content: ' ';
+	height: 0;
+	bottom: 100%;
+	position: absolute;
+	/*绝对定位*/
+	left: 45%;
+}
+
+.top:after {
+	/*上箭头设置*/
+	border-width: 10px;
+	/*设置箭头大小*/
+	border-bottom-color: #f2f2f2;
+	;
+	width: 0%;
+}
+
+.top:before {
+	/*上箭头设置*/
+	border-width: 0px;
+	/*设置隐藏的宽度为0，即隐藏*/
+	border-bottom-color: #333;
+	top: 10px;
+}
+
+.bottom {
+	/*下箭头设置*/
+	background-color: #ffff;
+	position: relative;
+	/*相对定位*/
+}
+
+.bottom:after,
+.bottom:before {
+	/*下箭头设置*/
+	border: solid transparent;
+	/*隐藏多余部分div*/
+	content: ' ';
+	height: 0;
+	top: 100%;
+	position: absolute;
+	/*绝对定位*/
+	right: 45%;
+	z-index: 100;
+}
+
+.bottom:after {
+	/*下箭头设置*/
+	border-width: 10px;
+	/*设置箭头大小*/
+	border-top-color: #f2f2f2;
+	width: 0%;
+}
+
+.bottom:before {
+	/*下箭头设置*/
+	border-width: 0px;
+	/*设置隐藏的宽度为0，即隐藏*/
+	border-top-color: #333;
+	top: 10px;
+}
+
+#content .content1 .hd {
+	/*丰职中的活动介绍*/
+	width: 1200px;
+	height: 950px;
+}
+
+#content .content1 .hd .head {
+	/*丰职中的活动介绍标题*/
+	height: 100px;
+	width: 1200px;
+}
+
+#content .content2 .hd {
+	/*重庆师范大学的角落介绍标题*/
+	margin-top: 20px;
+	height: 100px;
+	width: 1200px;
+	text-align: center;
+}
+
+#content .content1 .hd .value {
+	/*丰职中的活动介绍内容*/
+	width: 1200px;
+	/*3×400px*/
+	height: 870px;
+	/*20px+50px+800px*/
+	position: relative;
+	/*相对定位，控制子元素位置*/
+}
+
+#content .content1 .hd .value .act {
+	/*丰职中的小活动框，act=activity*/
+	width: 400px;
+	display: inline-block;
+	/*去掉换行效果*/
+	height: 870px;
+}
+
+#content .content1 .hd .value .act .jj {
+	/*丰职中小活动标题*/
+	width: 400px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+#content .content1 .hd .value .act .itd {
+	/*丰职中小活动内容（介绍）*/
+	width: 400px;
+	height: 800px;
+	position: relative;
+	/*相对定位，控制其子元素*/
+}
+
+#content .content1 .hd .value .act .itd div {
+	/*丰职中小活动内容（介绍）*/
+	width: 200px;
+	height: 200px;
+	background: #F2F2F2;
+}
+
+#content .content1 .hd .value .act .itd img {
+	/*丰职中小活动照片设置*/
+	width: 200px;
+	height: 200px;
+}
+
+#content .content1 .hd .value .act .itd .c1 {
+	/*元素位置设置*/
+	left: 0;
+	top: 0;
+}
+
+#content .content1 .hd .value .act .itd .c2 {
+	/*元素位置设置*/
+	left: 200px;
+	top: 0;
+	padding: 20px;
+	/*说明内容内边距为20px*/
+	text-align: justify;
+	/*文字两端对齐*/
+	text-indent: 2em;
+	/*首行缩进2em*/
+	font-size: 16px;
+	/*内容字体大小*/
+	line-height: 30px;
+	/*内容行高*/
+	width: 160px;
+	/*2×20px+160px*/
+	height: 160px;
+	/*2×20px+160px*/
+}
+
+#content .content1 .hd .value .act .itd .c3 {
+	/*元素位置设置*/
+	left: 0;
+	top: 200px;
+	padding: 20px;
+	/*说明内容内边距为20px*/
+	text-align: justify;
+	/*文字两端对齐*/
+	text-indent: 2em;
+	/*首行缩进2em*/
+	font-size: 16px;
+	/*内容字体大小*/
+	line-height: 30px;
+	/*内容行高*/
+	width: 160px;
+	/*2×20px+160px*/
+	height: 160px;
+	/*2×20px+160px*/
+}
+
+#content .content1 .hd .value .act .itd .c4 {
+	/*元素位置设置*/
+	left: 200px;
+	top: 200px;
+	padding: 0px;
+}
+
+#content .content1 .hd .value .act .itd .c5 {
+	/*元素位置设置*/
+	left: 0;
+	top: 400px;
+}
+
+#content .content1 .hd .value .act .itd .c6 {
+	/*元素位置设置*/
+	left: 200px;
+	top: 400px;
+	padding: 20px;
+	/*说明内容内边距为20px*/
+	text-align: justify;
+	/*文字两端对齐*/
+	text-indent: 2em;
+	/*首行缩进2em*/
+	font-size: 16px;
+	/*内容字体大小*/
+	line-height: 30px;
+	/*内容行高*/
+	width: 160px;
+	/*2×20px+160px*/
+	height: 160px;
+	/*2×20px+160px*/
+}
+
+#content .content1 .hd .value .act .itd .c7 {
+	/*元素位置设置*/
+	left: 0;
+	top: 600px;
+	padding: 20px;
+	/*说明内容内边距为20px*/
+	text-align: justify;
+	/*文字两端对齐*/
+	text-indent: 2em;
+	/*首行缩进2em*/
+	font-size: 16px;
+	/*内容字体大小*/
+	line-height: 30px;
+	/*内容行高*/
+	width: 160px;
+	/*2×20px+160px*/
+	height: 160px;
+	/*2×20px+160px*/
+}
+
+#content .content1 .hd .value .act .itd .c8 {
+	/*元素位置设置*/
+	left: 200px;
+	top: 600px;
+	padding: 0;
+}
+
+#content .content1 .hd .value .act .itd .c1,
+#content .content1 .hd .value .act .itd .c2,
+#content .content1 .hd .value .act .itd .c3,
+#content .content1 .hd .value .act .itd .c4,
+#content .content1 .hd .value .act .itd .c5,
+#content .content1 .hd .value .act .itd .c6,
+#content .content1 .hd .value .act .itd .c7,
+#content .content1 .hd .value .act .itd .c8 {
+	/*对丰职中小活动进行绝对定位*/
+	position: absolute;
+}
+
+#content .content1 .hd .value .d1,
+#content .content1 .hd .value .d3 {
+	/*对学校部分活动进行绝对定位*/
+	position: absolute;
+}
+
+#content .content1 .hd .value .d1 {
+	/*小活动位置设置*/
+	left: 0;
+	top: 0;
+}
+
+#content .content1 .hd .value .d3 {
+	/*小活动位置设置*/
+	left: 800px;
+	top: 0;
+}
+
+#content .big {
+	/*页面字体属性-大*/
+	font-size: 35px;
+	line-height: 45px;
+}
+
+#content .middle {
+	/*页面字体大小-中*/
+	font-size: 26px;
+	line-height: 55px;
+}
+
+#content span {
+	/*界面默认字体设置*/
+	font-size: 20px;
+	line-height: 25px;
+}
+
+
+/*页脚区域*/
+
+#footer {
+	width: 1200px;
+	background: ghostwhite;
+	/*颜色为米白色*/
+}
+
+#footer .contact {
+	width: 1000px;
+	/*因为padding实际宽度为1000+100*2*/
+	height: 200px;
+	/*因为padding实际高度为100+50*2*/
+	padding: 0px 100px;
+	background: rgba(255, 255, 255, 1);
+}
+
+#footer .contact .content {
+	padding: 20px 0;
+	/*控制内边距，间接增加高度*/
+	height: 130px;
+	text-align: left;
+}
+
+#footer .contact .content span {
+	/*对span标记设置*/
+	width: 200px;
+	margin: 0 25px;
+	padding-left: 70px;
+	height: 45px;
+	/*文本的高度*/
+	text-align: left;
+	display: inline-block;
+	/*赋予宽和高*/
+	/*赋予inline-block属性*/
+}
+
+#footer .ico1 {
+	/*小图标1*/
+	background: url(img/电话.JPG);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .ico2 {
+	/*小图标2*/
+	background: url(img/邮箱.JPG);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .ico3 {
+	/*小图标3*/
+	background: url(img/微博.jpg);
+	background-size: auto 45px;
+	background-repeat: no-repeat;
+}
+
+#footer .copy {
+	/*版权信息*/
+	position: relative;
+	/*相对位置*/
+	width: 1200px;
+	height: 240px;
+	background: mediumpurple;
+	/*颜色为紫色*/
+	/*颜色为紫色*/
+	color: #fafafa;
+}
+
+#footer .copy .content {
+	/*版权信息内框设置*/
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	width: 1000px;
+	height: 120px;
+}
+
+#footer .copy .links {
+	/*二维码区域*/
+	position: absolute;
+	margin-top: -10px;
+	right: 0;
+	height: 140px;
+}
+
+#footer .copy .links img.zb {
+	/*左边图片的二维码位置设置*/
+	margin-right: 30px;
+	/*右外边距为30*/
+}
+
+#footer .copy .links span {
+	/*二维码图片说明*/
+	width: 100px;
+	/*宽度为100（二维码大小）*/
+	text-align: center;
+	/*内部居中*/
+	display: inline-block;
+	/*赋予宽和高*/
+	/*使同行*/
+}
+
+#footer .copy .links span.zb {
+	/*左边二维码文字位置设置*/
+	margin-right: 30px;
+	/*右外边距为30*/
+}
+
+#footer .copy span {
+	/*版权信息文字设置*/
+	width: 450px;
+	font-size: 18px;
+	line-height: 35px;
+	display: block;
+}
+
+#footer .copy .big {
+	/*版权信息内容大小*/
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#footer .copy .middle {
+	/*版权信息内容大小*/
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#footer .htbtn {
+	line-height: 45px;
+	margin: 0 auto 0em;
+	text-align: center;
+}
+
+#footer .htbtn:hover {
+	text-decoration: none;
+}
+
+#footer .contact .content a {
+	/*了解更多*/
+	display: inline-block;
+	/*赋予宽和高*/
+}
+
+#footer .htbtn {
+	/*显示设置*/
+	border: 0 solid mediumpurple;
+	/*紫色隐藏单实线*/
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid mediumpurple;
+	/*外轮廓宽度为1px 单实线*/
+	outline-color: rgba(144, 120, 220, 0.5);
+	/*外轮廓颜色为白色，半透明*/
+	outline-offset: 0px;
+	/*外轮廓距离边线0px*/
+	transition: 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+	/*完成时间为1.25s，按照贝塞尔曲线*/
+}
+
+#footer .htbtn:hover {
+	/*hover属性设置*/
+	border: 1px solid mediumpurple;
+	/*出现边线1px 单实线 紫色*/
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+	/*设置阴影效果*/
+	outline-color: rgba(255, 215, 0, 0);
+	/*轮廓线颜色为白色，全透明*/
+	outline-offset: 15px;
+	/*轮廓线距离边线15px*/
+	text-shadow: 1px 1px 2px #427388;
+	/*文字效果设置，x，y偏移1px，模糊2px 颜色为深灰色*/
+}
+
+
+/*页脚区域结束，css样式结束*/
+
+
+/*公用代码开始*/
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*公用代码结束*/
